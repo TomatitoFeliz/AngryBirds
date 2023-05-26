@@ -10,58 +10,91 @@ public class Disparo : MonoBehaviour
     private SpringJoint2D bolaSprintJoint;
 
     public GameObject bola;
+    public GameObject pivoteGameObject;
     public Rigidbody2D pivote;
     public float tiempoQuitarSprintJoin;
     public float tiempoFinJuego;
 
+    private Vector2 pPivote;
+    private Vector2 diferencia;
+    private Vector2 pInicial;
+
     private bool estaArrastrando;
+
+    public LineRenderer bolaLineRenderer;
+    public GameObject canasto;
 
     void Start()
     {
-        bolaSprintJoint.enabled = false;
+        bolaLineRenderer.enabled = false;
+
+        pInicial = bola.transform.position;
+        pPivote = pivoteGameObject.transform.position;
+
+        bolaSprintJoint = bola.GetComponent<SpringJoint2D>();        
+        bolaSprintJoint.connectedBody = pivote;
 
         camara = Camera.main;
 
         bolaRigidbody = bola.GetComponent<Rigidbody2D>();
-        bolaSprintJoint = bola.GetComponent<SpringJoint2D>();
-
-        bolaSprintJoint.connectedBody = pivote;
+        bolaRigidbody.isKinematic = true;
     }
 
     void Update()
     {
+        bolaLineRenderer.SetPosition(1, bola.transform.position);
+
         //Si no tiene asociado rigidbody nos salimos:
         if (bolaRigidbody == null) { return;  }
 
        if (!Touchscreen.current.primaryTouch.press.isPressed)
         {
-            bolaSprintJoint.enabled = true;
-
+          
             if (estaArrastrando)
             {
                 LanzarBola();
             }
-
+        
             estaArrastrando = false;
 
             return;
         }
 
-        estaArrastrando = true;
-
         //Tomar control de la bola:
-        bolaRigidbody.isKinematic = true;
-
         Vector2 posicionTocar = Touchscreen.current.primaryTouch.position.ReadValue();
         Vector2 posicionMundo = camara.ScreenToWorldPoint(posicionTocar);
 
-        bolaRigidbody.position = posicionMundo;
+        Debug.Log("Diferencia" + (posicionMundo - pPivote));
+        diferencia = (posicionMundo - pPivote);
+
+        if (diferencia.x < 4 && diferencia.x > -4 && diferencia.y < 4 && diferencia.y > -4)
+        {
+            canasto.SetActive(true);
+            bolaLineRenderer.enabled = true;
+
+            bolaSprintJoint.enabled = true;
+            estaArrastrando = true;
+            bolaRigidbody.position = posicionMundo;
+        }
+        else
+        {
+            canasto.SetActive(false);
+            bolaLineRenderer.enabled = false;
+
+            bolaRigidbody.position = pInicial;
+            bolaSprintJoint.enabled = false;
+            estaArrastrando = false;
+        }
+
 
         Debug.Log(posicionMundo);
     }
 
     private void LanzarBola()
     {
+        canasto.SetActive(false);
+        bolaLineRenderer.enabled = false;
+
         //La bola reacciona a la física dinámica:
         bolaRigidbody.isKinematic = false;
         bolaRigidbody = null;
