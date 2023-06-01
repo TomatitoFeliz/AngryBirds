@@ -9,6 +9,8 @@ public class Disparo : MonoBehaviour
     private Rigidbody2D bolaRigidbody;
     private SpringJoint2D bolaSprintJoint;
 
+    //public List<GameObject> pajaros;
+
     public GameObject bola;
     public GameObject pivoteGameObject;
     public Rigidbody2D pivote;
@@ -23,6 +25,11 @@ public class Disparo : MonoBehaviour
 
     public LineRenderer bolaLineRenderer;
     public GameObject canasto;
+    public CircleCollider2D collider2D;
+
+    //private GameObject cerdoInstanciado;
+
+    public int nPajaro;
 
     void Start()
     {
@@ -31,13 +38,18 @@ public class Disparo : MonoBehaviour
         pInicial = bola.transform.position;
         pPivote = pivoteGameObject.transform.position;
 
+        collider2D = bola.GetComponent<CircleCollider2D>();
+
         bolaSprintJoint = bola.GetComponent<SpringJoint2D>();        
         bolaSprintJoint.connectedBody = pivote;
 
         camara = Camera.main;
 
         bolaRigidbody = bola.GetComponent<Rigidbody2D>();
-        bolaRigidbody.isKinematic = true;
+
+       /*cerdoInstanciado =  Instantiate(Resources.Load("Cerdo") as GameObject, new Vector3(0, 0,0), Quaternion.identity);
+
+        cerdoInstanciado.gameObject.name = "CerdoInstanciado";*/
     }
 
     void Update()
@@ -63,8 +75,6 @@ public class Disparo : MonoBehaviour
         //Tomar control de la bola:
         Vector2 posicionTocar = Touchscreen.current.primaryTouch.position.ReadValue();
         Vector2 posicionMundo = camara.ScreenToWorldPoint(posicionTocar);
-
-        Debug.Log("Diferencia" + (posicionMundo - pPivote));
         diferencia = (posicionMundo - pPivote);
 
         if (diferencia.x < 4 && diferencia.x > -4 && diferencia.y < 4 && diferencia.y > -4)
@@ -92,6 +102,8 @@ public class Disparo : MonoBehaviour
 
     private void LanzarBola()
     {
+        collider2D.enabled = true;
+
         canasto.SetActive(false);
         bolaLineRenderer.enabled = false;
 
@@ -113,6 +125,14 @@ public class Disparo : MonoBehaviour
 
     private void FinJuego()
     {
+        nPajaro++;
         Debug.Log("FinJuego");
+        // instancias
+
+        bola = GameObject.Find("pajaro" + nPajaro.ToString());
+        collider2D = bola.GetComponent<CircleCollider2D>();
+        bolaRigidbody = bola.GetComponent<Rigidbody2D>();
+        bolaSprintJoint = bola.GetComponent<SpringJoint2D>();
+        bolaSprintJoint.connectedBody = pivote;
     }
 }

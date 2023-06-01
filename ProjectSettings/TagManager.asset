@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - ZonaAgarre
+  - 'Escenario '
+  - Enemigo
+  - Rojo
+  - Blanco
   layers:
   - Default
   - TransparentFX
