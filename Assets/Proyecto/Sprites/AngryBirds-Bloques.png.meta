@@ -1944,7 +1944,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AngryBirds-Bloques_90
+      name: Madera
       rect:
         serializedVersion: 2
         x: 320
@@ -1986,7 +1986,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AngryBirds-Bloques_92
+      name: MaderaRota01
       rect:
         serializedVersion: 2
         x: 734
@@ -2028,7 +2028,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AngryBirds-Bloques_94
+      name: MaderaRota02
       rect:
         serializedVersion: 2
         x: 320
@@ -3970,6 +3970,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Madera: 1851854772
       AngryBirds-Bloques_168: 1008619759
       AngryBirds-Bloques_1: -1776363122
       AngryBirds-Bloques_113: -1416645906
@@ -4013,7 +4014,6 @@ TextureImporter:
       AngryBirds-Bloques_60: -311447187
       AngryBirds-Bloques_122: -1895671800
       AngryBirds-Bloques_11: -1179958670
-      AngryBirds-Bloques_92: -1934025245
       AngryBirds-Bloques_37: -1263548875
       AngryBirds-Bloques_95: 867469564
       AngryBirds-Bloques_149: 1580953466
@@ -4058,6 +4058,7 @@ TextureImporter:
       AngryBirds-Bloques_171: -34993838
       AngryBirds-Bloques_185: 945996803
       AngryBirds-Bloques_58: 900117604
+      MaderaRota01: -1934025245
       AngryBirds-Bloques_6: 921162901
       AngryBirds-Bloques_28: -1269842620
       AngryBirds-Bloques_47: 661587783
@@ -4066,6 +4067,7 @@ TextureImporter:
       AngryBirds-Bloques_160: -1507795212
       AngryBirds-Bloques_2: -1163452886
       AngryBirds-Bloques_125: -412388160
+      MaderaRota02: -1577613964
       AngryBirds-Bloques_100: -236095756
       AngryBirds-Bloques_165: 1365416095
       AngryBirds-Bloques_49: -627660278
@@ -4083,7 +4085,6 @@ TextureImporter:
       AngryBirds-Bloques_109: -887866810
       AngryBirds-Bloques_88: 1822513228
       AngryBirds-Bloques_169: -1532869112
-      AngryBirds-Bloques_90: 1851854772
       AngryBirds-Bloques_183: -1309841827
       AngryBirds-Bloques_24: -790636779
       AngryBirds-Bloques_42: 203684929
@@ -4148,7 +4149,6 @@ TextureImporter:
       AngryBirds-Bloques_136: 1948884475
       AngryBirds-Bloques_129: 407875680
       AngryBirds-Bloques_9: 2092011195
-      AngryBirds-Bloques_94: -1577613964
       AngryBirds-Bloques_164: 2023487560
       AngryBirds-Bloques_61: 828667069
       AngryBirds-Bloques_151: -1259428874

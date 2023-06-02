@@ -13,18 +13,22 @@ public class Huevo : MonoBehaviour
     private Vector2 diferencia;
     private Vector2 pPivote;
 
+    public float fuerzaRecoil = 10;
     public GameObject prefabHuevo;
+    bool Disparo = true;
 
     private void Start()
     {
         tiraHuevo = false;
         rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
-        pPivote = gameObject.transform.position;
+        camara = Camera.main;
     }
 
     private void Update()
     {
-        if(rigidbody2D.velocity.x != 0)
+        pPivote = rigidbody2D.transform.position;
+
+        if (rigidbody2D.velocity.x != 0)
         {
             if (!Touchscreen.current.primaryTouch.press.isPressed)
             {
@@ -56,6 +60,12 @@ public class Huevo : MonoBehaviour
     }
     void LanzarHuevo()
     {
-        Instantiate(prefabHuevo, new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - 1), Quaternion.identity);
+        if (Disparo == true)
+        {
+            rigidbody2D.AddForce(Vector2.up * fuerzaRecoil, ForceMode2D.Impulse);
+            Instantiate(prefabHuevo, new Vector2(gameObject.transform.position.x, gameObject.transform.position.y - 1), Quaternion.identity);
+            //Destroy(this);
+            Disparo = false;
+        }
     }
 }

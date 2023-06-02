@@ -6,9 +6,12 @@ TagManager:
   tags:
   - ZonaAgarre
   - 'Escenario '
-  - Enemigo
   - Rojo
   - Blanco
+  - Huevo
+  - MuroMadera
+  - CerdoTanke
+  - CerdoNormal
   layers:
   - Default
   - TransparentFX

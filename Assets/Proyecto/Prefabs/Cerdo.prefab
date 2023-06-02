@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2678856362290356217}
   m_Layer: 0
   m_Name: Cerdo
-  m_TagString: Enemigo
+  m_TagString: CerdoNormal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,7 +106,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &2678856362290356221
 CircleCollider2D:
@@ -138,3 +138,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 25
   "da\xF1oHit": 3
+  saltos: 1
+  fasesDestruction: []

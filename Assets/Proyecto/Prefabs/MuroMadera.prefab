@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 511912005068207354}
   m_Layer: 0
   m_Name: MuroMadera
-  m_TagString: 'Escenario '
+  m_TagString: MuroMadera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,3 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 20
   "da\xF1oHit": 3
+  saltos: 0
+  fasesDestruction:
+  - {fileID: -1934025245, guid: cc8318420779a7c469471b66f3c9a81b, type: 3}
+  - {fileID: -1577613964, guid: cc8318420779a7c469471b66f3c9a81b, type: 3}
