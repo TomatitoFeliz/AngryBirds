@@ -115,7 +115,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: AngryBirds-Lvls_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 101
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825963363e29e8446b1b1bfb989de742
+      internalID: 1197083916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryBirds-Lvls_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 494
+        width: 480
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6739a90305913144b525f5c49f4fc4c
+      internalID: -1861937366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryBirds-Lvls_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1
+        width: 122
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47b53db683834643bec6bbf6dd462b1
+      internalID: -159611279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryBirds-Lvls_3
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 0
+        width: 116
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7cb6ed8d4c6c554db6c3e9399c26d88
+      internalID: 752066886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryBirds-Lvls_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 325
+        width: 165
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a19e8126c1a2674ebc8777a5fc95a92
+      internalID: -1057450648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryBirds-Lvls_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 325
+        width: 165
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e70f6ef0c8f2484bb92b83a7d34bfdd
+      internalID: -751210016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryBirds-Lvls_6
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 325
+        width: 165
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e112141e54172dc40a78b3d3d4e5fe81
+      internalID: -732511786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryBirds-Lvls_7
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 645
+        width: 165
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9626664576be93e42bab7030f75c8de4
+      internalID: -550388953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryBirds-Lvls_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 109
+        width: 236
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5332ee2907aaeb64cbad50c4874e0f1d
+      internalID: -1357465531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +315,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AngryBirds-Lvls_0: 1197083916
+      AngryBirds-Lvls_4: -1057450648
+      AngryBirds-Lvls_7: -550388953
+      AngryBirds-Lvls_3: 752066886
+      AngryBirds-Lvls_8: -1357465531
+      AngryBirds-Lvls_6: -732511786
+      AngryBirds-Lvls_5: -751210016
+      AngryBirds-Lvls_2: -159611279
+      AngryBirds-Lvls_1: -1861937366
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

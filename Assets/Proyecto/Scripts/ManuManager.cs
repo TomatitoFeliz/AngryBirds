@@ -10,7 +10,8 @@ public class ManuManager : MonoBehaviour
     public Slider menuSettingsSlider;
     bool menuOn = false;
 
-    public GameObject muted;
+    public GameObject muted, information;
+    bool musicMuteOn = false;
 
     public void IniciarNivel()
     {
@@ -41,5 +42,19 @@ public class ManuManager : MonoBehaviour
             });
             menuOn = false;
         }
+    }
+
+    public void MenuInformationOn()
+    {
+        LeanTween.moveLocalX(information, 0, 0.7f).setEaseInBack();
+    }
+    public void MenuInformationOff()
+    {
+        LeanTween.moveLocalX(information, -2000, 2f).setEaseInBack();
+    }
+    
+    public void MuteMusic()
+    {
+
     }
 }
