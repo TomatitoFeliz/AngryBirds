@@ -31,6 +31,8 @@ public class Disparo : MonoBehaviour
 
     public int nPajaro;
 
+    public GameObject[] canastos;
+
     void Start()
     {
         canasto = GameObject.Find("Canasto");
@@ -135,9 +137,10 @@ public class Disparo : MonoBehaviour
         Debug.Log("SiguienteTiro");
         // instancias
         if (GameObject.Find("pajaro" + nPajaro.ToString())  != null)
-        {   
+        {
+            canastos[nPajaro - 1].SetActive(true);
             canasto = GameObject.Find("Canasto" + nPajaro.ToString());
-            canasto.SetActive(true);
+            canasto.SetActive(false);
             bola = GameObject.Find("pajaro" + nPajaro.ToString());
             bolaLineRenderer = bola.GetComponent<LineRenderer>();
             collider2D = bola.GetComponent<CircleCollider2D>();

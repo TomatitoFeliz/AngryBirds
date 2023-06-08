@@ -706,6 +706,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &679055904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4133608755485690270, guid: cd384fe237bc6e346a6c38544bfcccba, type: 3}
+  m_PrefabInstance: {fileID: 1687079837}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &905333316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4133608756517242986, guid: cd384fe237bc6e346a6c38544bfcccba, type: 3}
@@ -1103,6 +1108,9 @@ MonoBehaviour:
   tiempoQuitarSprintJoin: 0.15
   tiempoFinJuego: 1
   nPajaro: 0
+  canastos:
+  - {fileID: 679055904}
+  - {fileID: 1509304840}
 --- !u!4 &1330785425
 Transform:
   m_ObjectHideFlags: 0
@@ -1351,6 +1359,11 @@ Transform:
   m_Father: {fileID: 1904462594}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1509304840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 469777385088965583, guid: 9c7eb8868f060a04da05351e5b36b185, type: 3}
+  m_PrefabInstance: {fileID: 4600844050861505393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1687079837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2033,18 +2046,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1248368842}
     m_Modifications:
-    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
-      propertyPath: fasesDestruction.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
-      propertyPath: fasesDestruction.Array.data[0]
-      value: 
-      objectReference: {fileID: 1546496789, guid: 26e29c0b4b85b4542ba387f3738df403, type: 3}
-    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
-      propertyPath: fasesDestruction.Array.data[1]
-      value: 
-      objectReference: {fileID: 275043831, guid: 26e29c0b4b85b4542ba387f3738df403, type: 3}
     - target: {fileID: 2678856362290356218, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
       propertyPath: m_RootOrder
       value: 0
