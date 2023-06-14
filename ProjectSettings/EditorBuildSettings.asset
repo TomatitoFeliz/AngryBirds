@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Proyecto/Scenes/MenuInicial.unity
     guid: 946bccc75ae3d66458a2bbd230815ee2
   - enabled: 1
+    path: Assets/Proyecto/Scenes/MenuNiveles.unity
+    guid: bd1cf413c6891d8488ed9e94258f10b2
+  - enabled: 1
     path: Assets/Proyecto/Scenes/NVL-01.unity
     guid: 4cc60b3610a039b43a950666e5835772
   m_configObjects: {}

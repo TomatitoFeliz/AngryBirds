@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class ManuManager : MonoBehaviour
 {
@@ -11,11 +12,12 @@ public class ManuManager : MonoBehaviour
     bool menuOn = false;
 
     public GameObject muted, information;
+    public AudioMixer audioMixer;
     bool musicMuteOn = false;
 
     public void IniciarNivel()
     {
-        SceneManager.LoadScene("NVL-01");
+        SceneManager.LoadScene("MenuNiveles");
     }
 
     public void SalirJuego()
@@ -55,6 +57,17 @@ public class ManuManager : MonoBehaviour
     
     public void MuteMusic()
     {
-
+        if (musicMuteOn == false)
+        {
+            muted.SetActive(true);
+            audioMixer.SetFloat("Musica", -80f);
+            musicMuteOn = true;
+        }
+        else if (musicMuteOn == true)
+        {
+            muted.SetActive(false);
+            audioMixer.SetFloat("Musica", 0);
+            musicMuteOn = false;
+        }
     }
 }

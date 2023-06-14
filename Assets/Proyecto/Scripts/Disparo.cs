@@ -21,7 +21,7 @@ public class Disparo : MonoBehaviour
     private Vector2 diferencia;
     private Vector2 pInicial;
 
-    private bool estaArrastrando;
+    private bool estaArrastrando = false;
 
     private LineRenderer bolaLineRenderer;
     private GameObject canasto;
@@ -62,7 +62,7 @@ public class Disparo : MonoBehaviour
 
     void Update()
     {
-        bolaLineRenderer.SetPosition(1, bola.transform.position);
+        bolaLineRenderer.SetPosition(1, canasto.transform.position);
 
         //Si no tiene asociado rigidbody nos salimos:
         if (bolaRigidbody == null) { return;  }
