@@ -15,6 +15,13 @@ public class ManuManager : MonoBehaviour
     public AudioMixer audioMixer;
     bool musicMuteOn = false;
 
+
+    public void Start()
+    {
+        //revisar interfaZ...
+        MusicVolume();
+
+    }
     public void IniciarNivel()
     {
         SceneManager.LoadScene("MenuNiveles");
@@ -59,14 +66,31 @@ public class ManuManager : MonoBehaviour
     {
         if (musicMuteOn == false)
         {
-            muted.SetActive(true);
             audioMixer.SetFloat("Musica", -80f);
-            musicMuteOn = true;
+            MusicVolume();
+           
         }
         else if (musicMuteOn == true)
         {
-            muted.SetActive(false);
             audioMixer.SetFloat("Musica", 0);
+            MusicVolume();
+     
+        }
+    }
+
+    private void MusicVolume()
+    {
+        float db;
+        audioMixer.GetFloat("Musica",out db);
+        Debug.Log(db);
+        if (db ==-80f)
+        {
+            muted.SetActive(true);
+            musicMuteOn = true;
+        }
+        else if (db == 0)
+        {
+            muted.SetActive(false);
             musicMuteOn = false;
         }
     }

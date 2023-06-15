@@ -62,7 +62,11 @@ public class Disparo : MonoBehaviour
 
     void Update()
     {
-        bolaLineRenderer.SetPosition(1, canasto.transform.position);
+        if (canasto != null)
+        {
+            bolaLineRenderer.SetPosition(1, canasto.transform.position);
+        }
+
 
         //Si no tiene asociado rigidbody nos salimos:
         if (bolaRigidbody == null) { return;  }
@@ -103,9 +107,6 @@ public class Disparo : MonoBehaviour
             bolaSprintJoint.enabled = false;
             estaArrastrando = false;
         }
-
-
-        Debug.Log(posicionMundo);
     }
 
     private void LanzarBola()
