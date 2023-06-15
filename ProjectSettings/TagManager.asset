@@ -12,6 +12,8 @@ TagManager:
   - MuroMadera
   - CerdoTanke
   - CerdoNormal
+  - Enemigo
+  - Disparado
   layers:
   - Default
   - TransparentFX

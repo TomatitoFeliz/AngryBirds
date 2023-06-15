@@ -8,8 +8,6 @@ public class Destrucción : MonoBehaviour
     public float dañoHit;
     public int saltos = 1;
     Rigidbody2D rigidbody2D;
-
-    public static float puntuacionNivel;
     
     public Sprite[] fasesDestruction;
     private void Start()
@@ -18,17 +16,16 @@ public class Destrucción : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(puntuacionNivel);
 
         if (vida <= 0)
         {
             if (gameObject.tag == "MuroMadera")
             {
-                puntuacionNivel += 3000;
+                EndGame.instance.puntuacion += 3000;
             }
             else
             {
-                puntuacionNivel += 5000;
+                EndGame.instance.puntuacion += 5000;
             }
             Destroy(gameObject);
         }
@@ -78,11 +75,22 @@ public class Destrucción : MonoBehaviour
         {
             if (collision.gameObject.tag == "Rojo" || collision.gameObject.tag == "Blanco")
             {
-                puntuacionNivel += 1000;
+                EndGame.instance.puntuacion += 1000;
                 if (collision.rigidbody.velocity.x >= 10 && vida <= 20)
                 {
+                    if (vida >= 15 && vida <= 20)
+                    {
+                        EndGame.instance.puntuacion += 10000;
+                    }
+                    else if (vida >= 10  && vida <= 15)
+                    {
+                        EndGame.instance.puntuacion += 3000;
+                    }
+                    else if (vida >= 0 && vida <= 10)
+                    {
+                        EndGame.instance.puntuacion += 1000;
+                    }
                     Destroy(gameObject);
-                    puntuacionNivel += 10000;
                 }        
                 else
                 {
@@ -93,7 +101,7 @@ public class Destrucción : MonoBehaviour
             if (collision.gameObject.tag != "Rojo" || collision.gameObject.tag != "Blanco" || collision.gameObject.tag == "Huevo")
             {
                 vida -= dañoHit;
-                puntuacionNivel += 1000;
+                EndGame.instance.puntuacion += 1000;
                 if (gameObject.tag == "CerdoNormal" && gameObject.tag == "CerdoTanke" && saltos != 0)
                 {
                     rigidbody2D.AddForce(Vector2.up * 3, ForceMode2D.Impulse);
@@ -104,10 +112,21 @@ public class Destrucción : MonoBehaviour
             if (collision.gameObject.tag == "Huevo")
             {
                 Debug.Log(collision.rigidbody.velocity.y);
-                puntuacionNivel += 1000;
+                EndGame.instance.puntuacion += 1000;
                 if (collision.rigidbody.velocity.y >= -10 && vida <= 20)
                 {
-                    puntuacionNivel += 10000;
+                    if (vida >= 15 && vida <= 20)
+                    {
+                        EndGame.instance.puntuacion += 10000;
+                    }
+                    else if (vida >= 10 && vida <= 15)
+                    {
+                        EndGame.instance.puntuacion += 3000;
+                    }
+                    else if (vida >= 0 && vida <= 10)
+                    {
+                        EndGame.instance.puntuacion += 1000;
+                    }
                     Destroy(gameObject);
                 }
                 else

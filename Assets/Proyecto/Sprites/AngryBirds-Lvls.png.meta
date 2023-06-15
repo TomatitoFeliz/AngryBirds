@@ -305,6 +305,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: AngryBirds-Lvls_9
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 125
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b16c0944f2a84c448878798e5cc16ff
+      internalID: 318527509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -325,6 +346,7 @@ TextureImporter:
       AngryBirds-Lvls_5: -751210016
       AngryBirds-Lvls_2: -159611279
       AngryBirds-Lvls_1: -1861937366
+      AngryBirds-Lvls_9: 318527509
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -33,6 +33,14 @@ public class Disparo : MonoBehaviour
 
     public GameObject[] canastos;
 
+    public static Disparo instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+    }
+
     void Start()
     {
         canasto = GameObject.Find("Canasto");
@@ -133,6 +141,8 @@ public class Disparo : MonoBehaviour
 
     private void FinJuego()
     {
+
+        bola.tag = "Disparado";
         Destroy(canasto);
         nPajaro++;
         Debug.Log("SiguienteTiro");
