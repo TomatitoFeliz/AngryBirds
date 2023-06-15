@@ -8,8 +8,16 @@ public class EndGame : MonoBehaviour
     public static EndGame instance;
     bool victoria;
 
+    [SerializeField]
+    GameObject hudCanvas, endCanvas, victoriaCanvas, derrotaCanvas;
+
     private void Awake()
     {
+        hudCanvas.SetActive(true);
+        endCanvas.SetActive(false);
+        victoriaCanvas.SetActive(false);
+        derrotaCanvas.SetActive(false);
+
         if (instance == null)
             instance = this;
     }
@@ -33,14 +41,20 @@ public class EndGame : MonoBehaviour
         {
 
             yield return new WaitForSeconds(4);
+            hudCanvas.SetActive(false);
+            endCanvas.SetActive(true);
 
             Debug.Log("FinJuego");
             if (victoria == true)
             {
+                victoriaCanvas.SetActive(true);
+                derrotaCanvas.SetActive(false);
                 Debug.Log("Ganaste");
             }
             else
             {
+                victoriaCanvas.SetActive(false);
+                derrotaCanvas.SetActive(true);
                 Debug.Log("Pediste");
             }
         }
