@@ -15,6 +15,15 @@ public class ManuManager : MonoBehaviour
     public AudioMixer audioMixer;
     bool musicMuteOn = false;
 
+    public float nivel;
+
+    public static ManuManager instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+    }
 
     public void Start()
     {
@@ -94,4 +103,15 @@ public class ManuManager : MonoBehaviour
             musicMuteOn = false;
         }
     }
+
+    public void ReiniciarNivel()
+    {
+        SceneManager.LoadScene("NVL-0" + nivel.ToString());
+    }
+
+    public void SiguienteNivel()
+    {
+        SceneManager.LoadScene("NVL-0" + (nivel + 1).ToString());
+    }
+
 }

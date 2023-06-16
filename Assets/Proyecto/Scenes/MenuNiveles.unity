@@ -603,7 +603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Peru
+  m_text: tirador
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6082af8bdc3da32429f6eb15ca5e17dd, type: 2}
   m_sharedMaterial: {fileID: 5206235462148655764, guid: 6082af8bdc3da32429f6eb15ca5e17dd, type: 2}
@@ -949,9 +949,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Rusia
-
-'
+  m_text: bombardeo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6082af8bdc3da32429f6eb15ca5e17dd, type: 2}
   m_sharedMaterial: {fileID: 5206235462148655764, guid: 6082af8bdc3da32429f6eb15ca5e17dd, type: 2}
@@ -1253,6 +1251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a60bc27acd8434d419be191547069ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bLvl2: {fileID: 1100949153}
+  bLvl3: {fileID: 579137453}
   lvl: 3
 --- !u!1 &580708757
 GameObject:
@@ -1688,6 +1688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a60bc27acd8434d419be191547069ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bLvl2: {fileID: 1100949153}
+  bLvl3: {fileID: 579137453}
   lvl: 1
 --- !u!1 &943978210
 GameObject:
@@ -2356,6 +2358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a60bc27acd8434d419be191547069ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bLvl2: {fileID: 1100949153}
+  bLvl3: {fileID: 579137453}
   lvl: 2
 --- !u!1 &1108704378
 GameObject:
@@ -2597,6 +2601,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126264464}
   - component: {fileID: 1126264463}
+  - component: {fileID: 1126264465}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -2620,6 +2625,7 @@ MonoBehaviour:
   muted: {fileID: 1272441085}
   information: {fileID: 1401626301}
   audioMixer: {fileID: 24100000, guid: 045e3b8076ee42b41b7caf2854ef0074, type: 2}
+  nivel: 0
 --- !u!4 &1126264464
 Transform:
   m_ObjectHideFlags: 0
@@ -2635,6 +2641,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1126264465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126264462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5997e7cd68b44b54ea2aaec03dd42936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pLvl1: {fileID: 965852034}
+  pLvl2: {fileID: 1017682897}
+  pLvl3: {fileID: 295826040}
 --- !u!1 &1147363343
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,7 +3349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bosque Culiao
+  m_text: Torreon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6082af8bdc3da32429f6eb15ca5e17dd, type: 2}
   m_sharedMaterial: {fileID: 5206235462148655764, guid: 6082af8bdc3da32429f6eb15ca5e17dd, type: 2}
