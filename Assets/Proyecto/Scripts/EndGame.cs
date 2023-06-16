@@ -16,6 +16,9 @@ public class EndGame : MonoBehaviour
     TextMeshProUGUI puntuacionTxt;
     public int arregloPuntuacion;
 
+    public AudioSource audioSource;
+    public AudioClip victoriaSound, derrotaSound;
+
     private void Awake()
     {
         Time.timeScale = 1f;
@@ -62,6 +65,8 @@ public class EndGame : MonoBehaviour
                     puntuacion = puntuacion + (rojos * 10000) + (blancos * 10000);
                 }
 
+                audioSource.Stop();
+                audioSource.PlayOneShot(victoriaSound);
                 victoriaCanvas.SetActive(true);
                 derrotaCanvas.SetActive(false);
                 Debug.Log("Ganaste");
@@ -70,6 +75,8 @@ public class EndGame : MonoBehaviour
             }
             else
             {
+                audioSource.Stop();
+                audioSource.PlayOneShot(derrotaSound);
                 Time.timeScale = 0f;
                 victoriaCanvas.SetActive(false);
                 derrotaCanvas.SetActive(true);

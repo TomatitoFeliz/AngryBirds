@@ -130,6 +130,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1248368842}
     m_Modifications:
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 8300000, guid: d59487b8684b25746aa4e832fa3face7, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: pig
+      value: 
+      objectReference: {fileID: 8300000, guid: 17506aaebbe6d8b4991910475b5a1a9b, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: wood
+      value: 
+      objectReference: {fileID: 8300000, guid: 530db6fe203637d47bb44b9201cc2f9e, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 907551940}
     - target: {fileID: 2678856362290356218, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1920,6 +1936,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1248368842}
     m_Modifications:
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 8300000, guid: d59487b8684b25746aa4e832fa3face7, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: pig
+      value: 
+      objectReference: {fileID: 8300000, guid: 17506aaebbe6d8b4991910475b5a1a9b, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: wood
+      value: 
+      objectReference: {fileID: 8300000, guid: 530db6fe203637d47bb44b9201cc2f9e, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 907551940}
     - target: {fileID: 2678856362290356218, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3464,6 +3496,9 @@ MonoBehaviour:
   derrotaCanvas: {fileID: 1182934850}
   puntuacionTxt: {fileID: 2042368614}
   arregloPuntuacion: 4000
+  audioSource: {fileID: 907551940}
+  victoriaSound: {fileID: 8300000, guid: 0c0cadbf94b611049b71079c2c04430d, type: 3}
+  derrotaSound: {fileID: 8300000, guid: a8427f66c3e5c9e429a3d22f73058d94, type: 3}
 --- !u!1 &1360037966
 GameObject:
   m_ObjectHideFlags: 0
@@ -4448,6 +4483,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1248368842}
     m_Modifications:
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 8300000, guid: d59487b8684b25746aa4e832fa3face7, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: pig
+      value: 
+      objectReference: {fileID: 8300000, guid: 17506aaebbe6d8b4991910475b5a1a9b, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: wood
+      value: 
+      objectReference: {fileID: 8300000, guid: 530db6fe203637d47bb44b9201cc2f9e, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 907551940}
     - target: {fileID: 2678856362290356218, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5579,6 +5630,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1248368842}
     m_Modifications:
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 8300000, guid: d59487b8684b25746aa4e832fa3face7, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: pig
+      value: 
+      objectReference: {fileID: 8300000, guid: 17506aaebbe6d8b4991910475b5a1a9b, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: wood
+      value: 
+      objectReference: {fileID: 8300000, guid: 530db6fe203637d47bb44b9201cc2f9e, type: 3}
+    - target: {fileID: 2678856362290356217, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 907551940}
     - target: {fileID: 2678856362290356218, guid: 8004f42ebe35df04db2d171884a529a8, type: 3}
       propertyPath: m_RootOrder
       value: 0
