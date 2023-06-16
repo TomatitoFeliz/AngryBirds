@@ -113,6 +113,8 @@ public class Destrucción : MonoBehaviour
 
     private void FaseChange()
     {
+
+
         //DestucciónCerdoTanke:
         if (gameObject.tag == "CerdoTanke")
         {
